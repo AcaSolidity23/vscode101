@@ -4,7 +4,7 @@ def print_lol(the_list,level=0):
             print_lol(each_item,level+1)
         else:
             for tab_stop in range(level):
-                print("/t",end=' ')
+                print("\t",end=' ')
             print(each_item)
             
 lst  = ["EFG","Unicredit", "RZB","Procredit",["DB","Commerz"]]
