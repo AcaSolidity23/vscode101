@@ -7,5 +7,8 @@ def print_lol(the_list,level=0):
                 print("\t",end=' ')
             print(each_item)
             
-lst  = ["EFG","Unicredit", "RZB","Procredit",["DB","Commerz"]]
-print_lol(lst,1)
+import os
+#os.getcwd()
+data = open('bnk_lst.txt')
+print_lol(data)
+data.close()
