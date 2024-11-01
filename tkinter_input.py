@@ -8,8 +8,7 @@ def ourFunc():
     textEntered = ourTextField1.get()    
     ourLab = Label(ourWindow, text = textEntered,fg='aqua',bg='black').pack()
     
-ourBttn = Button(ourWindow, text= 'Enter')
-command = ourFunc.pack()
+ourBttn = Button(ourWindow, text= 'Enter', command= ourFunc).pack()
 
 ourWindow.mainloop()
     
