@@ -1,4 +1,4 @@
-from source import daily, weekly
+import daily, weekly
 
 print('Daily forecast: ', daily.forecast())
 print('Weekly forecast: ')
