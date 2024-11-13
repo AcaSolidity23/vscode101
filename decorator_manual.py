@@ -1,4 +1,7 @@
+def add_ints(a, b):
+    return a + b
 
+print('Simple func:', add_ints(3, 5))
 
 def document_it(func):
     def new_function(*args,**kwargs):
@@ -10,8 +13,5 @@ def document_it(func):
         return result
     return new_function
 
-@document_it
-def add_ints(a, b):
-    return a + b
-
-print('Simple func:', add_ints(3, 5))
+cooler_add_ints = document_it(add_ints)
+cooler_add_ints(3, 5)
