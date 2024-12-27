@@ -1,5 +1,6 @@
 import PyPDF2
 import re
+
 file_nm = r'504000-100007748-20-SEP-2024.pdf'
 file_path = r'C:\Users\alazarevic\Desktop\\'
 
@@ -16,7 +17,7 @@ obRez = obRez[1:]
 obRezDt = obRezDtRegex.search(pageObj.extract_text())
 
 with open(file_path + 'PDF_output.txt', 'w', encoding="utf-8") as text_file:
-    text_file.write(obRezDt.group())
+    text_file.write('Datum:' + obRezDt.group() +'\n')
     text_file.write('Prethodno stanje:' + obRez[0]+'\n')
     text_file.write('Dnevne promene:' + obRez[1]+'\n')
     text_file.write('Saldo:' + obRez[2]+'\n')
