@@ -1,0 +1,5 @@
+flask
+pywin32
+pandas
+requests
+python-dotenv
